@@ -1,0 +1,109 @@
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* all */
+
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: grey;
+}
+.wrapper{
+    max-width: 1440px;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+    background-color: white;
+}
+.container{
+    margin-inline: 30px;
+}
+a{
+    text-decoration: none;
+}
+
+/* header */
+
+.site_navigation{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    text-align: center;    
+    height: max-content;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.site_navigation_a{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    height: min-content
+}
+
+/* header elements */
+
+.site_navigation>p{
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    height: min-content
+}
+
+.site_navigation>input{
+    margin-top: 0px;
+    border:1px solid rgb(229, 229, 234);
+    border-radius: 60px;
+    width: 470px;
+    font-size: 16px;
+    height: 45px;
+    padding-left: 2%;
+    box-shadow: 0px 10px 25px 0px rgba(5, 16, 55, 0.04);
+
+}
+.site_navigation a{
+    color:black;
+    font-size: 16px;
+    font-weight: 500;
+}
+.site_navigation a:visited{
+    color:black;
+}
+.site_navigation>button{
+    color:rgb(0, 122, 255);
+    font-size: 16px;
+    font-weight: 500;
+    background-color: rgba(0, 122, 255, 0.12);
+    border-radius: 33px;
+    padding: 1%;
+    cursor: pointer;
+    transition: all 275ms ease-in;
+}
+.site_navigation>button:hover{
+    background-color: rgba(0, 123, 255, 0.336);
+    color:rgb(24, 134, 252);
+}
+
+/* first main */
+
+.first_main{
+    background-color:white;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.first_main img{
+    width: 889px;
+    height: 490px;
+}
+
+.first_main>div{
+    width: 432px;
+    height: 490px;
+    border-radius: 12px;
+    box-shadow: 0px 18px 34px 0px rgba(5, 16, 55, 0.15);
+}
