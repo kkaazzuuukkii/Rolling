@@ -255,13 +255,41 @@ hr{
 .second_main_good_cost{
     display: flex;
     flex-direction: row;
-    gap: 8px;
+    gap: 28px;
+    margin-top: 48px;
+    margin-inline: 20px;
 }
-.special{
-    position: absolute;
-    
-}
-.second_main_good_cost_autor{
+.second_main_good_cost_person img{
     width: 24px;
     height: 24px;
+}
+
+.second_main_good_cost_person{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    position: relative;
+    align-self: flex-end
+}
+.second_main_good_cost_person p{
+    color: rgb(142, 142, 147);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.second_main_good_cost_bid{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.c_bid{
+    color: rgb(142, 142, 147);
+    font-size: 16px;
+    font-weight: 400;
+}
+.eth_bid{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 500;
 }
