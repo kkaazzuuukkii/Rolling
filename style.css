@@ -89,21 +89,115 @@ a{
 
 /* first main */
 
+.first_main_container{
+    margin-top: 48px;
+    margin-inline: 36px;
+}
+.first_main h1{
+    font-weight: 500;
+    font-size: 28px;
+}
+.first_main_autor{
+    margin-top: 12px;
+}
 .first_main{
     background-color:white;
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
-
 .first_main img{
     width: 889px;
     height: 490px;
 }
-
 .first_main>div{
     width: 432px;
     height: 490px;
     border-radius: 12px;
     box-shadow: 0px 15px 35px 0px rgba(5, 16, 55, 0.15);
+}
+
+.first_main_about{
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+/* current + line */
+
+.first_main_current{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+hr{
+    border: 1px solid rgb(199, 199, 204);
+    transform: rotate(90);
+}
+
+.main_bid{
+    font-size: 16px;
+    font-weight: 400;
+}
+.main_eth{
+    font-size: 24px;
+    font-weight: 500;
+}
+.main_cost{
+    color: rgb(142, 142, 147);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* ends in */
+
+.first_main_ends{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.first_main_ends_time{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+.first_main_time_hours, .first_main_time_minutes, .first_main_time_seconds{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.main_time{
+    font-size: 24px;
+    font-weight: 500;
+}
+.main_time_name{
+    color: rgb(142, 142, 147);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/*  */
+
+.main_first_button{
+    margin-top: 72px;
+    background-color: rgb(0, 122, 255);
+    color:white;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    height: 55px;
+    border-radius: 45px;
+}
+
+
+.main_first_view{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(0, 122, 255);
 }
