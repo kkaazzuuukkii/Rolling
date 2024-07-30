@@ -43,3 +43,43 @@ array.map((value) => {
     clone.querySelector('.second_main_good_photo').src = value.image;
     goods.appendChild(clone);
 })
+
+
+// Таймер
+
+const sec = document.querySelector('.main_time_seconds');
+const min = document.querySelector('.main_time_minutes');
+const hour = document.querySelector('.main_time_hours');
+
+let sectext = parseInt(sec.innerText);
+let mintext = parseInt(min.innerText);
+let hourtext = parseInt(hour.innerText);
+
+const interval = setInterval(() => {
+  if (hourtext === 0 && mintext === 0 && sectext === 0) {
+    clearInterval(interval);
+    return;
+  }
+
+  sectext -= 1;
+
+  if (sectext < 0) {
+    sectext = 59;
+    mintext -= 1;
+
+    if (mintext < 0) {
+      mintext = 59;
+      hourtext -= 1;
+
+      if (hourtext < 0) {
+        hourtext = 0;
+      }
+
+      hour.innerHTML = hourtext;
+    }
+
+    min.innerHTML = mintext;
+  }
+
+  sec.innerHTML = sectext;
+}, 1000);

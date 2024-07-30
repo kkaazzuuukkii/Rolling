@@ -311,7 +311,7 @@ a{
     font-weight: 500;
     cursor: pointer;
     transition: all 275ms ease-in;
-margin-bottom: 55px;
+    margin-bottom: 55px;
 }
 .second_main_button:hover{
     background-color:rgb(231, 231, 231);
@@ -328,14 +328,15 @@ margin-bottom: 55px;
 }
 .site_footer_container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 175px;
+    margin-inline: auto;
 }
 .site_footer_rolling, .site_footer_community{
     display: flex;
     flex-direction: column;
     gap: 28px;
     margin-top: 65px;
-    
     color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: 500;
@@ -356,7 +357,6 @@ margin-bottom: 55px;
     width: 70%;
     height: 2px;
     margin-inline: auto;
-
 }
 
 .site_footer_logo{
@@ -365,7 +365,4 @@ margin-bottom: 55px;
     font-weight: 600;
     margin-bottom: 42px;
     margin-inline: auto;
-    /* position: absolute;
-    margin: auto;
-    top: 2600px; */
 }
