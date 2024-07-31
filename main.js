@@ -138,4 +138,4 @@ const interval = setInterval(() => {
   }
 
   sec.innerHTML = sectext;
-}, 1);
+}, 1000);
