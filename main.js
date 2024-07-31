@@ -1,7 +1,12 @@
+function load() { 
 const goods = document.querySelector(".second_main_goods")
-const good = document.querySelector(".second_main_good")
+
+const div_goods = document.querySelector('.second_main_goods')
 
 const array = [
+    {
+        image: './img/good1.jpg'
+    },
     {
         image: './img/good2.jpg'
     },
@@ -37,12 +42,63 @@ const array = [
     }
 ]
 
+for (let i = 0; i < array.length; i++) {
+    
+    const div_good = document.createElement('div')
+    const img_good = document.createElement('img')
+    const h1_good = document.createElement('h1')
 
-array.map((value) => {
-    const clone = good.cloneNode(true);
-    clone.querySelector('.second_main_good_photo').src = value.image;
-    goods.appendChild(clone);
-})
+    const good_cost = document.createElement('div')
+    const good_cost_person = document.createElement('div')
+    const good_cost_autor = document.createElement('img')
+    const good_cost_p = document.createElement('p')
+
+    const good_bid = document.createElement('div')
+    const good_cbid = document.createElement('p')
+    const good_ethbid = document.createElement('p')
+
+    div_goods.appendChild(div_good)
+    div_good.classList.add('second_main_good')
+
+    div_good.appendChild(img_good)
+    img_good.classList.add('second_main_good_photo')
+    img_good.src = array[i].image
+
+    div_good.appendChild(h1_good)
+    h1_good.innerHTML = "3D Soft Curves"
+
+    div_good.appendChild(good_cost)
+    good_cost.classList.add('second_main_good_cost')
+
+    good_cost.appendChild(good_cost_person)
+    good_cost_person.classList.add('second_main_good_cost_person')
+
+    good_cost_person.appendChild(good_cost_autor)
+    good_cost_autor.src = './img/autor.jpg'
+
+    good_cost_person.appendChild(good_cost_p)
+    good_cost_p.innerHTML = 'Esther Howard'
+
+    good_cost.appendChild(good_bid)
+    good_bid.classList.add('second_main_good_cost_bid')
+
+    good_bid.appendChild(good_cbid)
+    good_cbid.classList.add('c_bid')
+    good_cbid.innerHTML = 'Current Bid'
+
+    good_bid.appendChild(good_ethbid)
+    good_ethbid.classList.add('eth_bid')
+    good_ethbid.innerHTML = '0.85 ETH'
+}
+
+}
+
+// Сохранение в инпут
+const input = document.querySelector('.search_input');
+
+const save = () => {
+    localStorage.setItem('input-text', input.value)
+}
 
 
 // Таймер
@@ -82,4 +138,4 @@ const interval = setInterval(() => {
   }
 
   sec.innerHTML = sectext;
-}, 1000);
+}, 1);

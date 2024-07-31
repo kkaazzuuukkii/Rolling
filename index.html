@@ -13,8 +13,8 @@
 
         <header class="site_navigation">
                 <p>Rolling</p>
-                <input type="text" placeholder="Search Rolling">
-            <div class="site_navigation_a">
+                <input type="text" placeholder="Search Rolling" class="search_input" onchange="save()">
+                <div class="site_navigation_a">
                 <a href="#">Explore</a>
                 <a href="#">Activity</a>
                 <a href="#">Feed</a>
@@ -73,27 +73,13 @@
             </div>
 
             <div class="second_main_goods">
-                <div class="second_main_good">
-                    <img src="img/good1.jpg" class="second_main_good_photo">
 
-                    <h1>3D Soft Curves</h1>
-                    
-                    <div class="second_main_good_cost">
-                        <div class="second_main_good_cost_person">
-                            <img src="img/autor.jpg">
-                            <p>Esther Howard</p>
-                        </div>
-                        
-                        <div class="second_main_good_cost_bid">
-                            <p class="c_bid">Current Bid</p>
-                            <p class="eth_bid">0.85 ETH</p>
-                        </div>
-                    </div>
-                </div>
+
+
             </div>
             <div class="btn_div">
                 
-            <button class="second_main_button">Load More</button>
+            <button class="second_main_button" onclick="load()">Load More</button>
             </div>
         </main>
     </div>
